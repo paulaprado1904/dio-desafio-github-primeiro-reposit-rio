@@ -106,7 +106,7 @@ O GIT é um Sistema Distribuído Seguro, pois garante integridade e dificultam a
 			ssh-add id_ed25519 		#passar o caminho de onde está a chave privada para decriptografar os arquivos que chegarem criptografados com a chave pública
 			_digitar senha_
 			
-	###Usando a Chave SSH
+	### Usando a Chave SSH
 		
 		-> no GitHub
 			entar no repositório > Code > SSH > copiar url ssh
