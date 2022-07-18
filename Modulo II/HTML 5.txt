@@ -39,3 +39,132 @@ HTML5
 	2. Item 2
 	
 	<li> 		#item da lista 
+	</li>
+
+# Introduçãoao CSS3
+
+	seletores: são elementos HTML, e dentro do par de haves contém as declarações (cor, fonte)
+	ID: elementos que não se repetem, representam qualquer elemento que serão identificados pelo CSS3
+	class: representam qualquer elemento que serão identificados pelo CSS3
+	
+	-> Adicionar classes e mudar alguns elementos do site:
+	dentro das chaves. exemplo: <h1 id="title">
+	**no CSS, iremos fazer referência ao "title" para que possamos modificar 
+	
+	## Box model
+	
+	No layout de um site, o navegador representa cada elemento HTML como uma caixa retangular, chamada box model. e com  o CSS é possivel alterar a aparenacia dessa caixa.
+		margin> border> padding> content
+		
+		margin: espaçamentos entre elementos
+		border: circundam o padding e o conteúdo (largura e cor)
+		padding: espaçamento entre a borda e o conteúdo
+		content: o próprio conteúdo
+		
+	## Estilizando elementos, textos e listas
+		
+		### Elementos
+			
+			exemplo: 
+				.post {
+					padding: 10px 5px; ##10px= eixo y, parte superior e inferior; 5px= eixo x, lado esquerdo e direito;
+				}
+			exemplo 2: 
+				.post {
+					padding: 15px 10px 5px 0; ##15px = topo, 10px= lado direito, 5px= base, 0= lado esquerdo # rodam no sentido horário
+				}
+			
+			exemplo 3: 
+				.post {
+					padding-top: 15px;
+					padding-right: 10px;
+					padding-bottom: 5px;
+					padding-left: 0;
+				}
+			exemplo 4: 
+				.post {
+					backgroud-color: green;
+					backgroud-image: url("bg.png")
+					backgroud-position: top;
+				}
+			
+			exemplo 5: 
+				.post {
+					backgroud-color: green;	##nome
+					backgroud-color: #008800; ##código hexadecimal
+				}
+			
+			exemplo 6:
+				.post {
+					border: 3px solid blue;		#padrão: largura, estilo e cor
+					border-top: 2px dotted green;	#dotted= pontilhado
+					border-right: 4px dashed pink;	#dashed= tracejado
+				}
+			
+			exemplo 7: 
+				.post {
+					border-top: 2px dotted green;
+					border-right: 2px dotted green;
+					border-bottom: 2px dotted green;
+					border-left: 2px dotted green;
+				}
+			
+			exemplo 8:
+				.post {
+					border: 3px solid #505050;
+				}
+				
+				ou
+				
+				.post {
+					border-width: 3px;
+					border-color: #505050;
+					border-style: solid;
+				}
+				
+				ou
+				#especificando o lado
+				.post {
+					border-top-width: 3px;
+					border-top-color: #505050;
+					border-top-style: solid;
+				}
+				
+			exemplo 9:		radius: arredondamento, pode ser em pixels ou porcentagem
+				.post {
+					border-radius: 10px;
+					border-radius: 50%;
+					border-radius: 10% 20%;
+					border-radius: 10% 20% 15% 22%;
+				}
+		### Textos
+		
+			Exemplos:
+			
+				#title {
+					font-family: Verdana;
+					font-family: Verdana, Arial;		#duas fontes, caso uma não funcione, a segunda entra como um backup;
+					font-size: 30px;
+					font-style: normal;
+					font-style: italic;
+					font-weight: normal;			#peso do texto, comum como foi desenhada
+					font-weight: bold;
+					text-transform: uppercase / lowercase / capitalize;
+					text-decoration: underline / overline / line-throught;	
+				}
+				
+		### Listas
+		
+			Exemplos:
+			
+				ul {
+					list-style-type: square;
+				}
+				
+				ol {
+					list-style-type: upper-roman;
+				}
+				
+				ul {
+					list-style-type: "\1F44D";
+				}
